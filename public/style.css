@@ -97,6 +97,7 @@ main { width: 100%; max-width: 640px; display: flex; flex-direction: column; ali
   transform-style: preserve-3d;
 }
 .card.flipped .card-inner { transform: rotateY(180deg); }
+.card.no-anim .card-inner { transition: none; }
 
 .card-face {
   position: absolute;

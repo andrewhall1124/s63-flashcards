@@ -119,8 +119,13 @@
     if (state.idx >= deck.length) state.idx = deck.length - 1;
     var c = deck[state.idx];
 
+    // Snap back to the front with no animation, so the new card's answer
+    // never flashes while the previous card is rotating back.
+    el.card.classList.add("no-anim");
     state.flipped = false;
     el.card.classList.remove("flipped");
+    void el.card.offsetWidth; // force reflow so the snap applies before re-enabling
+    el.card.classList.remove("no-anim");
 
     el.frontChapter.textContent = c.chapter;
     el.backChapter.textContent = c.chapter;
