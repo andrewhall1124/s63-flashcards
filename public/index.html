@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f172a" />
+  <title>Series 63 — Numbers Flashcards</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎴</text></svg>" />
+</head>
+<body>
+  <header>
+    <h1>Series 63 · Numbers</h1>
+    <p class="tagline">Flip the card, recall the number, mark how you did.</p>
+  </header>
+
+  <section class="controls">
+    <div class="control-row">
+      <label for="chapter">Chapter</label>
+      <select id="chapter"></select>
+    </div>
+    <div class="control-row toggles">
+      <label class="switch">
+        <input type="checkbox" id="dueOnly" />
+        <span>Focus on cards I don't know</span>
+      </label>
+      <button id="shuffle" class="ghost">🔀 Shuffle</button>
+      <button id="reset" class="ghost danger">↺ Reset progress</button>
+    </div>
+  </section>
+
+  <main>
+    <div id="stats" class="stats"></div>
+
+    <div id="card" class="card" role="button" tabindex="0" aria-label="Flashcard, click to flip">
+      <div class="card-inner">
+        <div class="card-face card-front">
+          <span class="chip" id="front-chapter"></span>
+          <p class="prompt" id="front-text"></p>
+          <span class="hint">click / space to flip</span>
+        </div>
+        <div class="card-face card-back">
+          <span class="chip" id="back-chapter"></span>
+          <p class="answer-key" id="back-key"></p>
+          <p class="answer-detail" id="back-text"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grade" id="grade">
+      <button id="miss" class="grade-btn miss">✗ Didn't know</button>
+      <button id="got" class="grade-btn got">✓ Got it</button>
+    </div>
+
+    <div class="nav">
+      <button id="prev" class="ghost">← Prev</button>
+      <span id="position" class="position"></span>
+      <button id="next" class="ghost">Next →</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>Deck built from your Series 63 Prep notes · <span id="count"></span> cards ·
+      <kbd>space</kbd> flip · <kbd>←</kbd>/<kbd>→</kbd> move · <kbd>1</kbd> miss · <kbd>2</kbd> got</p>
+  </footer>
+
+  <script src="cards.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
