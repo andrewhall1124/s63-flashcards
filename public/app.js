@@ -11,6 +11,7 @@
 
   var state = {
     chapter: "All chapters",
+    type: "all",
     dueOnly: false,
     deck: [],
     idx: 0,
@@ -20,6 +21,7 @@
   // ---- elements ----
   var el = {
     chapter: document.getElementById("chapter"),
+    type: document.getElementById("type"),
     dueOnly: document.getElementById("dueOnly"),
     shuffle: document.getElementById("shuffle"),
     reset: document.getElementById("reset"),
@@ -52,6 +54,10 @@
   // ---- events ----
   el.chapter.addEventListener("change", function () {
     state.chapter = el.chapter.value;
+    buildDeck();
+  });
+  el.type.addEventListener("change", function () {
+    state.type = el.type.value;
     buildDeck();
   });
   el.dueOnly.addEventListener("change", function () {
@@ -94,8 +100,9 @@
   function buildDeck() {
     var deck = ALL.filter(function (c) {
       var chapterOk = state.chapter === "All chapters" || c.chapter === state.chapter;
+      var typeOk = state.type === "all" || (c.type || "number") === state.type;
       var dueOk = !state.dueOnly || progress[c.id] !== "got";
-      return chapterOk && dueOk;
+      return chapterOk && typeOk && dueOk;
     });
     state.deck = deck;
     state.idx = 0;

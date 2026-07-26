@@ -3,13 +3,16 @@
 A tiny flashcard web app for drilling the numeric facts on the Series 63 exam
 (registration windows, net-worth minimums, dollar thresholds, statutes of limitations, etc.).
 
-The deck is built from the *Series 63 Prep* notes and is deliberately focused on **the numbers**:
-each card asks a question and the back shows the number big, plus a one-line detail.
+The deck is built from the *Series 63 Prep* notes. It emphasizes **the numbers**
+(each card shows the answer big, plus a one-line detail) and also includes **concept cards**
+for the important qualitative rules — who must register, exempt securities/transactions, and
+distinctions like "delay disbursements but not transactions." Use the Show filter to drill
+Numbers only, Concepts only, or all cards.
 
 ## Features
 
-- 44 cards across all 6 chapters
-- Filter by chapter
+- 60 cards across all 6 chapters (44 number cards + 16 concept cards)
+- Filter by chapter, and by Numbers / Concepts / All
 - "Focus on cards I don't know" mode
 - Shuffle
 - Grade each card ✓ Got it / ✗ Didn't know — progress saved in your browser (localStorage)

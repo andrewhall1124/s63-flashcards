@@ -276,4 +276,130 @@ window.CARDS = [
     back: "Up to 10 additional business days, by the administrator or adult protective services.",
     key: "+10 business days",
   },
+
+  // ================= CONCEPT CARDS (non-numerical) =================
+
+  // ---------- Chapter 1 ----------
+  {
+    chapter: "Ch 1: BDs & Agents",
+    type: "concept",
+    front: "When must a broker-dealer register in a state?",
+    key: "In the business + (office OR retail client)",
+    back: "When it is in the business of effecting securities transactions AND it has either an office in the state or one or more retail clients who are residents of the state.",
+  },
+  {
+    chapter: "Ch 1: BDs & Agents",
+    type: "concept",
+    front: "When is a broker-dealer EXEMPT from registering in a state?",
+    key: "No office + only BDs/institutions or snowbird client",
+    back: "No place of business in the state, AND either (a) its business is only with other BDs / institutional investors (banks, savings, trusts, insurance, investment cos., pensions), or (b) its only business is with an existing retail customer temporarily in the state who resides where the firm is properly registered.",
+  },
+  {
+    chapter: "Ch 1: BDs & Agents",
+    type: "concept",
+    front: "What three things must be true to be an agent?",
+    key: "Natural person · sponsored · transacting (ODR)",
+    back: "Must be a natural person (not an entity), sponsored by a registered broker-dealer or issuer, and transacting — offering/selling — securities business.",
+  },
+  {
+    chapter: "Ch 1: BDs & Agents",
+    type: "concept",
+    front: "The 5 exempt SECURITIES where an agent representing an issuer need not register?",
+    key: "Gov't · diplomatic gov'ts · banks · prime paper · employee plans",
+    back: "1) US/Canadian federal & municipal gov't securities; 2) foreign gov't securities where the US has diplomatic relations; 3) US commercial bank, savings institution & trust company securities; 4) top-3-rated commercial paper ($50k+, <9 mo); 5) investment contracts for employee stock-purchase / savings / pension / profit-sharing plans.",
+  },
+  {
+    chapter: "Ch 1: BDs & Agents",
+    type: "concept",
+    front: "The 4 exempt TRANSACTIONS where an agent need not register?",
+    key: "Unsolicited · issuer–underwriter · institutional · private placement",
+    back: "1) Unsolicited transactions (client-initiated); 2) transactions between issuers and underwriters; 3) institutional transactions; 4) private placements.",
+  },
+
+  // ---------- Chapter 2 ----------
+  {
+    chapter: "Ch 2: IAs & IARs",
+    type: "concept",
+    front: "Besides the AUM dollar tests, what qualitative factors make an IA federally covered?",
+    key: "Advises mutual funds · internet adviser · pension consultant · private funds",
+    back: "Advising investment companies (mutual funds), being an internet adviser, being a pension consultant to large plans, or advising private funds — any of these makes an IA federally covered regardless of the $110M line.",
+  },
+  {
+    chapter: "Ch 2: IAs & IARs",
+    type: "concept",
+    front: "When must an investment adviser register in a state?",
+    key: "Office in state OR >5 retail residents (12 mo)",
+    back: "If it has a place of business in the state, or more than 5 retail clients who are residents of that state within the past 12 months.",
+  },
+  {
+    chapter: "Ch 2: IAs & IARs",
+    type: "concept",
+    front: "Where must an IAR register, based on its IA's status?",
+    key: "Fed IA → office only · State IA → office or >5 clients",
+    back: "If the IA is federally covered, only where the IAR has an office. If the IA is state-covered, where the IAR has an office or more than 5 retail clients. IARs never register with the SEC.",
+  },
+  {
+    chapter: "Ch 2: IAs & IARs",
+    type: "concept",
+    front: "Besides the net-worth minimums, what other IA registration requirements exist?",
+    key: "Surety bonds · maintain records",
+    back: "Posting surety bonds (protection against loss/theft of securities by employees) and maintaining records.",
+  },
+
+  // ---------- Chapter 3 ----------
+  {
+    chapter: "Ch 3: Securities & Issuers",
+    type: "concept",
+    front: "Reg D private placement — accredited vs. non-accredited investors?",
+    key: "≤35 non-accredited · UNLIMITED accredited",
+    back: "A maximum of 35 non-accredited investors, but an unlimited number of accredited investors.",
+  },
+  {
+    chapter: "Ch 3: Securities & Issuers",
+    type: "concept",
+    front: "What is a 'qualified purchaser'?",
+    key: "$5M-investment individual OR $25M-managing entity",
+    back: "An individual or family-owned business with at least $5M in investments, OR an entity that manages at least $25M in investments for other qualified purchasers.",
+  },
+
+  // ---------- Chapter 4 ----------
+  {
+    chapter: "Ch 4: Remedies",
+    type: "concept",
+    front: "Where must BD vs. IA records be kept?",
+    key: "BD → principal's office · IA → an office of the IA",
+    back: "BDs: min 3 years, first 2 years in a ready location (the principal's office). IAs: min 5 years, first 2 years in an appropriate office of the IA.",
+  },
+  {
+    chapter: "Ch 4: Remedies",
+    type: "concept",
+    front: "When can an administrator's order or final order be appealed, and how?",
+    key: "Written petition within 60 days",
+    back: "By filing a written petition with the state court system within 60 days of the order's issuance (same 60-day window for court review after a final order to deny/revoke/suspend).",
+  },
+
+  // ---------- Chapter 5 ----------
+  {
+    chapter: "Ch 5: Communications",
+    type: "concept",
+    front: "When must an IA brochure be delivered, and what does late delivery trigger?",
+    key: "48 hrs before, OR at signing + 5-day free exit",
+    back: "Within 48 hours prior to entering the advisory contract, or at the time of signing — but then the client may terminate without penalty within 5 business days.",
+  },
+
+  // ---------- Chapter 6 ----------
+  {
+    chapter: "Ch 6: Ethics",
+    type: "concept",
+    front: "In suspected financial exploitation of an eligible adult, what may be delayed — and what may NOT?",
+    key: "Delay DISBURSEMENTS, not TRANSACTIONS",
+    back: "The firm may delay disbursements (up to 15 business days, extendable by +10), but may NOT delay transactions.",
+  },
+  {
+    chapter: "Ch 6: Ethics",
+    type: "concept",
+    front: "How can an agent act on ORAL discretionary authority?",
+    key: "OK if written authority obtained within 10 business days",
+    back: "Oral discretion is permitted for the first transaction, provided written discretionary authority is obtained within 10 business days of that first transaction.",
+  },
 ];
